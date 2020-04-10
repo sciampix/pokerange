@@ -19,7 +19,7 @@ function calculon() {
     let cards = ($("#cards").val() + '').toLowerCase().trim();
     let stack = parseFloat($("#stack").val());
     let position = $("#position").val();
-
+    let result = 'NULL';
     let result = alasql("SELECT * FROM ranges WHERE players= ? AND cards=? AND stack_min<=? AND stack_max>=? AND position=?", [players, cards, stack, stack, position]);
     let print = result && result[0] ? result[0].result : 'N/A'
     $("#result").html(print);
