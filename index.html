@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Pokerange</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+  <script src="assets/js/alasql/xlsx.js"></script>
+  <script src="assets/js/alasql/alasql.js"></script>
+  <script src="assets/js/phpjs.js"></script>
+  <script src="assets/js/globals.js"></script>
+  <script src="assets/js/main.js"></script>
+</head>
+
+<body class="bg-light">
+  <div class="container">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-1" src="https://i.ytimg.com/vi/f7rLc7mx000/maxresdefault.jpg" alt="" width="380">
+    </div>
+    <div class="row">
+      <div class="col-md-12 order-md-1">
+        <form>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label for="players">Players</label>
+              <select class="custom-select d-block w-100" id="players" required>
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="cards">Cards</label>
+              <input type="text" class="form-control" id="cards" placeholder="" value="" required>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="stack">Stack</label>
+              <input type="text" class="form-control" id="stack" placeholder="" value="" required>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="position">Position</label>
+              <select class="custom-select d-block w-100" id="position" required>
+                <option value="BTN">BTN</option>
+                <option value="SB">SB</option>
+                <option value="BB">BB</option>
+              </select>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block" type="button" id="calculon">Calculon</button>
+          <hr class="mb-4">
+          <div class="alert alert-primary text-center" role="alert">
+            <h3 id="result"></h3>
+            <div>
+        </form>
+      </div>
+    </div>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+    </footer>
+  </div>
+</body>
+
+</html>
