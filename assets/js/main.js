@@ -23,7 +23,6 @@ function calculon() {
     let cards = ($("#cards").val() + '').toLowerCase().trim();
     let stack = parseFloat($("#stack").val());
     let position = $("#position").val();
-    let result = 'NULL';
     let cardss = cards.split("");
     let a = cardsPriority.indexOf(cardss[0]);
     let b = cardsPriority.indexOf(cardss[1]);
