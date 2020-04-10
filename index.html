@@ -30,7 +30,7 @@
     </div>
     <div class="row">
       <div class="col-md-12 order-md-1">
-        <form>
+        <form name="calculon">
           <div class="row">
             <div class="col-md-3 mb-3">
               <label for="players">Players</label>
@@ -43,6 +43,9 @@
             <div class="col-md-3 mb-3">
               <label for="cards">Cards</label>
               <input type="text" class="form-control" id="cards" placeholder="" value="" required>
+              
+                <h4 class="fixedCard m-1 p-2 alert-success d-none"></h4>
+              
             </div>
             <div class="col-md-3 mb-3">
               <label for="stack">Stack</label>
@@ -58,10 +61,9 @@
             </div>
           </div>
           <hr class="mb-4">
-          <button class="btn btn-primary btn-lg btn-block" type="button" id="calculon">Calculon</button>
+          <button class="btn btn-primary btn-lg btn-block" type="submit" id="calculon">Calculon</button>
           <hr class="mb-4">
-          <div class="alert alert-primary text-center" role="alert">
-            <h3 id="result"></h3>
+          <div class="alert alert-primary text-center d-none h3" role="alert" id="result">
             <div>
         </form>
       </div>
