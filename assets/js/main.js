@@ -31,7 +31,7 @@ function calculon() {
         $(".fixedCard").html(cards).removeClass('d-none');
     }
     let result = alasql("SELECT * FROM ranges WHERE players= ? AND cards=? AND stack_min<=? AND stack_max>=? AND position=?", [players, cards, stack, stack, position]);
-    let print = result && result[0] ? result[0].result : 'N/A'
+    let print = result && result[0] ? result[0].result : 'N/A';
     $("#result").html(print).removeClass('d-none');
     console.log(result);
 }
